@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "run-api": "node node-api/api.js"
   },
   "dependencies": {
     "react": "^18",
