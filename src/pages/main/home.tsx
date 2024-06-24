@@ -1,5 +1,12 @@
 import { EventModel } from "../../../models";
 
+async function getEvents(): Promise<EventModel[]> {
+  const response = await fetch("http://localhost:8000/events");
+  const data = await response.json();
+  return data;
+}
+
+const Home = () => {
   return (
     <main className="container mx-auto py-8 px-4 bg-black">
       <h1 className="text-3xl font-bold mb-8 ">Shows</h1>
