@@ -11,7 +11,7 @@ const home = () => {
             <p className="text-gray-700 mt-2">Tem 10 lugares disponíveis</p>
             <p className="text-gray-700 mt-2">€ 120</p>
             <p>
-              <button className="rounded-lg bg-gray-800 px-4 py-1 mt-3">
+              <button className="rounded-lg bg-gray-800 px-4 py-1 mt-3 hover:bg-gray-700">
                 Reservar lugar
               </button>
             </p>
@@ -25,7 +25,7 @@ const home = () => {
             <p className="text-gray-700 mt-2">Tem 10 lugares disponíveis</p>
             <p className="text-gray-700 mt-2">€ 120</p>
             <p>
-              <button className="rounded-lg bg-gray-800 px-4 py-1 mt-3">
+              <button className="rounded-lg bg-gray-800 px-4 py-1 mt-3 hover:bg-gray-700">
                 Reservar lugar
               </button>
             </p>
@@ -39,7 +39,7 @@ const home = () => {
             <p className="text-gray-700 mt-2">Tem 10 lugares disponíveis</p>
             <p className="text-gray-700 mt-2">€ 120</p>
             <p>
-              <button className="rounded-lg bg-gray-800 px-4 py-1 mt-3">
+              <button className="rounded-lg bg-gray-800 px-4 py-1 mt-3 hover:bg-gray-700">
                 Reservar lugar
               </button>
             </p>
