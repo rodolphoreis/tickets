@@ -7,6 +7,7 @@ async function getEvents(): Promise<EventModel[]> {
   const response = await fetch("http://localhost:8000/events", {});
   return response.json();
 }
+  const events = await getEvents();
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
