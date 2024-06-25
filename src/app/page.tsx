@@ -7,6 +7,8 @@ async function getEvents(): Promise<EventModel[]> {
   const response = await fetch("http://localhost:8000/events", {});
   return response.json();
 }
+
+export default async function Home() {
   const events = await getEvents();
 
   return (
