@@ -4,7 +4,9 @@ import Link from "next/link";
 import { EventModel } from "../../models";
 
 async function getEvents(): Promise<EventModel[]> {
-  const response = await fetch("http://localhost:8000/events", {});
+  const response = await fetch("http://localhost:8000/events", {
+    cache: "no-cache",
+  });
   return response.json();
 }
 
