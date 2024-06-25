@@ -2,6 +2,12 @@ import Image from "next/image";
 
 import Link from "next/link";
 import { EventModel } from "../../models";
+
+async function getEvents(): Promise<EventModel[]> {
+  const response = await fetch("http://localhost:8000/events", {});
+  return response.json();
+}
+
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
