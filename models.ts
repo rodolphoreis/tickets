@@ -7,3 +7,9 @@ export type EventModel = {
   price: number;
   created_at: string;
 };
+
+export enum SpotStatus {
+  available = "available",
+  sold = "sold",
+}
+
