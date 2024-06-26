@@ -23,6 +23,10 @@ async function reserveSpotsAction(formData: FormData) {
   }
 
   cookieStore.set("spots", JSON.stringify(spots));
+  cookieStore.set("eventId", formData.get("eventId") as string);
+}
+
+async function SpotsLayoutPage({ params }: { params: { eventId: string } }) {
   const { event, spots } = await getEvent(parseInt(params.eventId));
 
   return <p>{params.eventId}</p>;
