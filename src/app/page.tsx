@@ -27,7 +27,9 @@ export default async function Home() {
               height={200}
             />
             <div className="p-4">
-              <h2 className="text-xl text-black font-bold">{event.name}</h2>
+              <h2 className="text-xl text-black font-bold">
+                {event.name.toUpperCase()}
+              </h2>
               <p className="text-gray-700 mt-2">
                 {new Date(event.date).toLocaleDateString()}
               </p>
