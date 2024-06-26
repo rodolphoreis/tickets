@@ -41,7 +41,7 @@ export default async function Home() {
               </p>
               <p className="text-gray-700 mt-2">
                 <Link
-                  href={"/"}
+                  href={`/events/${event.id}/spots-layout`}
                   className="bg-black hover:bg-gray-600 text-white font-bold py-2 px-4 rounded"
                 >
                   Reservar Lugar
