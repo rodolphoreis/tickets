@@ -12,6 +12,16 @@ async function getEvent(
   return response.json();
 }
 
+async function reserveSpotsAction(formData: FormData) {
+  "use server";
+  const spots = formData.getAll("spots");
+
+  const cookieStore = cookies();
+
+  if (spots.length == 0) {
+    return { error: "Selecione ao menos um assento." };
+  }
+
   cookieStore.set("spots", JSON.stringify(spots));
   const { event, spots } = await getEvent(parseInt(params.eventId));
 
