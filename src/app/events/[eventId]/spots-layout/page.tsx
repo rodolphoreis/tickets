@@ -12,11 +12,7 @@ async function getEvent(
   return response.json();
 }
 
-export default async function SpotsLayoutPage({
-  params,
-}: {
-  params: { eventId: string };
-}) {
+  cookieStore.set("spots", JSON.stringify(spots));
   const { event, spots } = await getEvent(parseInt(params.eventId));
 
   return <p>{params.eventId}</p>;
