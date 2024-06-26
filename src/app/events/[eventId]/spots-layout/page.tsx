@@ -1,4 +1,4 @@
-export default function SpotsLayoutPage({
+export default async function SpotsLayoutPage({
   params,
 }: {
   params: { eventId: string };
