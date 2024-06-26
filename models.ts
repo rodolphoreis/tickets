@@ -13,3 +13,9 @@ export enum SpotStatus {
   sold = "sold",
 }
 
+export type SpotModel = {
+  id: number;
+  name: string;
+  status: SpotStatus;
+  event_id: number;
+};
